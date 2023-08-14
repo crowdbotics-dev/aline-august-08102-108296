@@ -1,16 +1,16 @@
-import React from "react";
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, SafeAreaView, Image } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, SafeAreaView, Image } from 'react-native';
 export default function LoginScreen() {
   return <SafeAreaView style={styles.container}>
       <View style={styles.logoContainer}>
         <Image source={{
-        uri: "https://tinyurl.com/42evm3m3"
+        uri: 'https://tinyurl.com/42evm3m3'
       }} style={styles.logo} />
         <Text style={styles.logoText}>Login</Text>
       </View>
       <View style={styles.inputContainer}>
-        <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#333" />
-        <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#333" secureTextEntry={true} />
+        <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#fff" />
+        <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#fff" secureTextEntry={true} />
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
@@ -20,12 +20,12 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F5F5",
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: '#1E1E1E',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   logoContainer: {
-    alignItems: "center",
+    alignItems: 'center',
     marginBottom: 50
   },
   logo: {
@@ -34,32 +34,32 @@ const styles = StyleSheet.create({
     borderRadius: 50
   },
   logoText: {
-    color: "#333",
+    color: '#fff',
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     marginTop: 10
   },
   inputContainer: {
-    width: "80%"
+    width: '80%'
   },
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: '#333',
     borderRadius: 25,
     height: 50,
     paddingLeft: 20,
     marginBottom: 20,
-    color: "#333"
+    color: '#fff'
   },
   button: {
-    backgroundColor: "#FFA500",
+    backgroundColor: '#FFA500',
     borderRadius: 25,
     height: 50,
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   buttonText: {
-    color: "#fff",
+    color: '#fff',
     fontSize: 18,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   }
 });
