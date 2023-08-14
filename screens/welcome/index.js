@@ -1,16 +1,19 @@
 import React from "react";
-import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
+import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet, Button } from "react-native";
 
 const WelcomeScreen = () => {
   return <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
+          <Image style={styles.logo} source={{
+          uri: "https://tinyurl.com/42evm3m3"
+        }} resizeMode="contain" />
           <Text style={styles.text}>
             Let's build something amazing together!
           </Text>
         </View>
+        <Button title="Get Started" onPress={() => console.log("Button pressed")} />
         <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
       </ScrollView>
     </SafeAreaView>;
