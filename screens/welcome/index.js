@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   text: {
     textAlign: "center",
     fontSize: 28,
-    color: "#828AB0",
+    color: "#1b319e",
     fontWeight: 700
   },
   footer: {
